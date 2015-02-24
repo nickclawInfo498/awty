@@ -84,7 +84,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             try {
                 i = Integer.parseInt(interval.getText().toString());
             } catch(Exception e) {}
-            alarm.setRepeating(AlarmManager.ELAPSED_REALTIME, 0, i * 1000, pending);
+            alarm.setRepeating(AlarmManager.ELAPSED_REALTIME, 0, i * 1000 * 60, pending);
             Toast.makeText(this, number.getText() + ": " + message.getText(), Toast.LENGTH_LONG).show();
         }
 
